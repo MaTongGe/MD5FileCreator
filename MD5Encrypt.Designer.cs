@@ -42,8 +42,8 @@
             // 
             // tbMD5
             // 
-            resources.ApplyResources(this.tbMD5, "tbMD5");
             this.tbMD5.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.tbMD5, "tbMD5");
             this.tbMD5.Name = "tbMD5";
             this.tbMD5.ReadOnly = true;
             // 
@@ -54,10 +54,13 @@
             // 
             // tbPath
             // 
-            resources.ApplyResources(this.tbPath, "tbPath");
+            this.tbPath.AllowDrop = true;
             this.tbPath.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.tbPath, "tbPath");
             this.tbPath.Name = "tbPath";
             this.tbPath.ReadOnly = true;
+            this.tbPath.DragDrop += new System.Windows.Forms.DragEventHandler(this.TbPath_DragDrop);
+            this.tbPath.DragEnter += new System.Windows.Forms.DragEventHandler(this.TbPath_DragEnter);
             // 
             // label2
             // 

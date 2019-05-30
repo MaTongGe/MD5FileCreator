@@ -50,6 +50,7 @@ namespace MD5FileCreator
             }
 
             tbMD5.Text = EncryptWithMD5(tbPath.Text);
+            MessageBox.Show("加密成功！", "MD5加密程序", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void BtnBrowse_Click(object sender, EventArgs e)
@@ -61,7 +62,23 @@ namespace MD5FileCreator
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 tbPath.Text = dialog.FileName;
-                MessageBox.Show("加密成功！", "MD5加密程序", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void TbPath_DragDrop(object sender, DragEventArgs e)
+        {
+            tbPath.Text = ((Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
+        }
+
+        private void TbPath_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effect = DragDropEffects.All;
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
             }
         }
     }
