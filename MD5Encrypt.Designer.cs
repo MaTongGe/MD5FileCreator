@@ -42,115 +42,73 @@
             // 
             // tbMD5
             // 
+            resources.ApplyResources(this.tbMD5, "tbMD5");
             this.tbMD5.BackColor = System.Drawing.Color.White;
-            this.tbMD5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbMD5.Location = new System.Drawing.Point(76, 88);
-            this.tbMD5.Multiline = true;
             this.tbMD5.Name = "tbMD5";
             this.tbMD5.ReadOnly = true;
-            this.tbMD5.Size = new System.Drawing.Size(629, 111);
-            this.tbMD5.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(22, 91);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "md5值";
             // 
             // tbPath
             // 
+            resources.ApplyResources(this.tbPath, "tbPath");
             this.tbPath.BackColor = System.Drawing.Color.White;
-            this.tbPath.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbPath.Location = new System.Drawing.Point(76, 56);
             this.tbPath.Name = "tbPath";
             this.tbPath.ReadOnly = true;
-            this.tbPath.Size = new System.Drawing.Size(591, 26);
-            this.tbPath.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(7, 61);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 14);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "文件路径";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(256, 9);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 39);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "MD5加密程序";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(495, 28);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(210, 14);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Create By @MaTongGe On Github";
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(230, 205);
+            resources.ApplyResources(this.btnOK, "btnOK");
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 33);
-            this.btnOK.TabIndex = 6;
-            this.btnOK.Text = "加密";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(428, 205);
+            resources.ApplyResources(this.btnClear, "btnClear");
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 33);
-            this.btnClear.TabIndex = 7;
-            this.btnClear.Text = "清空";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBrowse.Location = new System.Drawing.Point(673, 56);
+            resources.ApplyResources(this.btnBrowse, "btnBrowse");
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(31, 26);
-            this.btnBrowse.TabIndex = 8;
-            this.btnBrowse.Text = "...";
-            this.btnBrowse.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.BtnBrowse_Click);
             // 
             // MD5Encrypt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 248);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbPath);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbMD5);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.label2);
             this.Name = "MD5Encrypt";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MD5加密程序";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

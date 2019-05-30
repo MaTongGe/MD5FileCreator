@@ -6,3 +6,10 @@ C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.csproj.Gene
 C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.csproj.CoreCompileInputs.cache
 C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.exe
 C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.pdb
+C:\Users\马桶哥\Desktop\MD5FileCreator\bin\Release\en\MD5FileCreator.resources.dll
+C:\Users\马桶哥\Desktop\MD5FileCreator\bin\Release\zh-Hant\MD5FileCreator.resources.dll
+C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.csprojAssemblyReference.cache
+C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.MD5Encrypt.en.resources
+C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\MD5FileCreator.MD5Encrypt.zh-Hant.resources
+C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\en\MD5FileCreator.resources.dll
+C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Release\zh-Hant\MD5FileCreator.resources.dll

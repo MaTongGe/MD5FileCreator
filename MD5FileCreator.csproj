@@ -48,7 +48,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MD5Encrypt.en.resx">
+      <DependentUpon>MD5Encrypt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MD5Encrypt.resx">
+      <DependentUpon>MD5Encrypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD5Encrypt.zh-Hant.resx">
       <DependentUpon>MD5Encrypt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
