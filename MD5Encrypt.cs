@@ -19,16 +19,17 @@ namespace MD5FileCreator
 
         public static string EncryptWithMD5(string source)
         {
-            byte[] sor = Encoding.UTF8.GetBytes(source);
-            MD5 md5 = MD5.Create();
-            byte[] result = md5.ComputeHash(sor);
-            StringBuilder strbul = new StringBuilder(40);
-            for (int i = 0; i < result.Length; i++)
+            FileStream file = new FileStream(source, FileMode.Open);
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] retVal = md5.ComputeHash(file);
+            file.Close();
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < retVal.Length; i++)
             {
-                //加密结果"x2"结果为32位,"x3"结果为48位,"x4"结果为64位
-                strbul.Append(result[i].ToString("x4"));
+                sb.Append(retVal[i].ToString("x"));
             }
-            return strbul.ToString();
+            return sb.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -68,6 +69,14 @@ namespace MD5FileCreator
         private void TbPath_DragDrop(object sender, DragEventArgs e)
         {
             tbPath.Text = ((Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
+
+            if (tbPath.Text == "" || !File.Exists(tbPath.Text))
+            {
+                MessageBox.Show("文件地址不合法或文件不存在！", "MD5加密程序", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            tbMD5.Text = EncryptWithMD5(tbPath.Text);
         }
 
         private void TbPath_DragEnter(object sender, DragEventArgs e)

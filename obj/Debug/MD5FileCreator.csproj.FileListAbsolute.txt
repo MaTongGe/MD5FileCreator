@@ -13,3 +13,4 @@ C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Debug\MD5FileCreator.MD5Encrypt.en
 C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Debug\MD5FileCreator.MD5Encrypt.zh-Hant.resources
 C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Debug\en\MD5FileCreator.resources.dll
 C:\Users\马桶哥\Desktop\MD5FileCreator\obj\Debug\zh-Hant\MD5FileCreator.resources.dll
+C:\Users\马桶哥\Desktop\MD5FileCreator\bin\Debug\MD5FileCreator.exe.config
